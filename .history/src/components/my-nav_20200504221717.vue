@@ -1,0 +1,27 @@
+<style lang="scss">
+    #nav{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        color: #FFFFFF;
+        background-color: #000000;
+        height: 40px;
+        &>span{
+            display: inline-block;
+            width: 24%;
+            line-height: 40px;
+            text-align: center;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+    }
+</style>
+<template>
+    <div id="nav">
+        <span>首页</span>
+        <span>北京</span>
+        <span>消息</span>
+        <span>我</span>
+    </div>
+</template>

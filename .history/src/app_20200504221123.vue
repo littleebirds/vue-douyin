@@ -8,8 +8,6 @@
     import MyNav from './components/my-nav.vue';
 
     export default {
-        components:{
-            MyNav,
-        }
+        
     }
 </script>
