@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="wrapper">
         <router-view></router-view>
         <my-nav></my-nav>
     </div>

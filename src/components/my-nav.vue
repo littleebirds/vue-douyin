@@ -7,11 +7,12 @@
         position: fixed;
         bottom: 0;
         left: 0;
-        background-color: #000000;  //transparent
+        background-color: transparent;  //transparent
         height: 40px;
         @include clearFloat;
         &>span{
             font-size: 15px;
+            font-weight: bolder;
             float: left;
             width: 20%;
             height: 40px;
