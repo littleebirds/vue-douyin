@@ -1,2 +1,12 @@
 $douyinColor-left: #27fbf8;
 $douyinColor-right: #fa2c52;
+
+@mixin clearFloat {
+    &:after{
+        content: '';
+        height: 0;
+        display: block;
+        clear: both;
+        visibility: hidden;
+    }
+}

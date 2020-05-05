@@ -7,25 +7,31 @@
         position: fixed;
         bottom: 0;
         left: 0;
-        background-color: #000000;
+        background-color: #000000;  //transparent
         height: 40px;
-        &>a{
+        @include clearFloat;
+        &>span{
+            font-size: 15px;
             float: left;
             width: 20%;
+            height: 40px;
             line-height: 40px;
             text-align: center;
-            color: gray;
-            text-decoration: none;
+            &>a{
+                display: inline-block;
+                height: 100%;
+                color: gray;
+                text-decoration: none;
+                box-sizing: border-box;
+            }
         }
-        &>a:last-child{
-            border: none;
-        }
-        .add{
+        & .add{
+            width: 50%;
             line-height: 37px;
             &>span{
                 display: inline-block;
                 height: 20px;
-                width: 50%;
+                width: 100%;
                 line-height: 20px;
                 vertical-align: middle;
                 background-color: #FFFFFF;
@@ -34,21 +40,30 @@
                 border-right: 2px $douyinColor-right solid;
             }
         }
+        & .active{
+            color: #FFFFFF;
+            border-bottom: 3px solid #FFFFFF;
+        }
     }
 </style>
 <template>
     <div id="nav">
-        <router-link to="home">首页</router-link>
-        <router-link to="city">北京</router-link>
-        <router-link to="add" class="add">
-            <span>+</span>
-        </router-link>
-        <router-link to="message">消息</router-link>
-        <router-link to="me">我</router-link>
+        <span>
+            <router-link to="home" class="nav" active-class="active">首页</router-link>
+        </span>
+        <span>
+            <router-link to="city" class="nav" active-class="active">北京</router-link>
+        </span>
+        <span>
+            <router-link to="add" class="add">
+                <span>+</span>
+            </router-link>
+        </span>
+        <span>
+            <router-link to="message" class="nav" active-class="active">消息</router-link>
+        </span>
+        <span>
+            <router-link to="me" class="nav" active-class="active">我</router-link>
+        </span>
     </div>
 </template>
-<script>
-export default {
-    
-}
-</script>
