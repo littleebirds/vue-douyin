@@ -2,11 +2,12 @@
 #home{
     width: 100%;
     height: 100%;
+    overflow: hidden;
     position: relative;
     &>.header{
         width: 100%;
         color: gray;
-        position: absolute;
+        position: fixed;
         left: 0;
         top: 0;
         &>span{
@@ -31,11 +32,11 @@
         }
     }
     &>.content{
-        width: 100%;
+        width: 200%;
         height: 100%;
         &>.subscribe, &>.recommendation{
             height: 100%;
-            width: 100%;
+            width: 50%;
             float: left;
             &>img{
                 width: 100%;
@@ -65,7 +66,11 @@
                 <font-awesome-icon icon="search"  />
             </span>
         </div>
-        <div class="info"></div>
+        <div class="info">
+            <div class="headerImg"></div>
+            <div class="comment"></div>
+            <div class="share"></div>
+        </div>
         <div class="footer"></div>
     </div>
 </template>
