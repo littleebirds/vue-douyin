@@ -9,7 +9,8 @@ const Me = ()=>import('./page/me.vue');
 const router = new VueRouter({
     routes: [{
         path:'/',
-        component: App,
+        component:App,
+        redirect: 'home',
         children:[{
             path:'home',
             component: Home,

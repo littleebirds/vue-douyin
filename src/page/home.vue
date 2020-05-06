@@ -66,17 +66,14 @@
                 <font-awesome-icon icon="search"  />
             </span>
         </div>
-        <div class="info">
-            <div class="headerImg"></div>
-            <div class="comment"></div>
-            <div class="share"></div>
-        </div>
-        <div class="footer"></div>
+        <share-info></share-info>
     </div>
 </template>
 <script>
 import content1Url1 from '../media/content1.jpg';
 import content1Url2 from '../media/content2.jpg';
+import ShareInfo from '../components/share-info.vue';
+
 export default {
     data () {
         return{
@@ -85,7 +82,7 @@ export default {
         }
     },
     components:{
-
+        ShareInfo,
     }
 }
 </script>
