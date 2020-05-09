@@ -67,12 +67,16 @@
             </span>
         </div>
         <share-info></share-info>
+        <desc-info
+            name="圈圈圆圆圈圈"
+            content="人生短短几个秋，不醉不罢休" />
     </div>
 </template>
 <script>
 import content1Url1 from '../media/content1.jpg';
 import content1Url2 from '../media/content2.jpg';
 import ShareInfo from '../components/share-info.vue';
+import DescInfo from '../components/desc-info.vue';
 
 export default {
     data () {
@@ -83,6 +87,7 @@ export default {
     },
     components:{
         ShareInfo,
+        DescInfo,
     }
 }
 </script>
